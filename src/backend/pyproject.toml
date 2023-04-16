@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "togather"
+version = "0.1.0"
+description = "A tinder-like app for creating new friendships and setting up group hangouts with random people"
+authors = ["Jakub Wilk <wilkjakub64@gmail.com>", "Roman Gala <gala.roman4@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+django = "^4.2"
+djangorestframework = "^3.14.0"
+psycopg = "^3.1.8"
+pyyaml = "^6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
