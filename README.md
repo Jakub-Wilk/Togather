@@ -2,6 +2,7 @@
 
 1. Install WSL2
 2. Install docker
+
    2a. If you want to work on the API, you need to install the dependencies in your local environment to get syntax highlighting. You can either do it through Poetry (recommended), or through `pip install .` while in the `src/backend/` directory.
 3. Run `docker compose up <service>`, where `<service>` is the service that you want to work on - `frontend`, `api`, or leave it empty if you want to work on both
 4. Wait for the image(s) to build (only this first build takes this long), then exit with Ctrl+C
