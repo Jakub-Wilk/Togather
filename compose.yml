@@ -33,3 +33,10 @@ services:
       poetry install --no-dev --no-interaction --no-ansi && \
       python3 manage.py makemigrations && \
       python3 manage.py migrate"
+  csu:
+    build: ./src/backend/
+    volumes:
+      - ./src/backend/:/home/python/app
+    command: bash -c "\
+      poetry install --no-dev --no-interaction --no-ansi && \
+      python3 manage.py createsuperuser"
